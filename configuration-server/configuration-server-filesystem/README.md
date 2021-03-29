@@ -1,22 +1,5 @@
 # [Configuration Server FileSystem](http://localhost:3000/post/254)
 
-# Table Of Content
-- [Purpose:](#purpose-)
-- [Requirements:](#requirements-)
-- [Where store the files?](#where-store-the-files-)
-- [Is there any name convention for the files?](#is-there-any-name-convention-for-the-files-)
+This guide will show you how to centralized your configuration and consume it througth a spring cloud configuration server, but this implementation is focus on save all files in the server, instead of git as repository, you may want to do this if you want to prevent that any user update the git repository and this could cause issues in the different environments... well this depends of how your company implements the deployments.
 
-## Purpose:
-Create a spring cloud component that will allow to read the configuration from the filesystem, 
-this application can be used if you want to store the properties on a server instead of 
-a git repository.
-
-## Requirements:
-* Java 8
-
-## Where store the files?
-The files can be stored in the server-files directory.
-
-## Is there any name convention for the files?
-Yes, all files needs to start with application-**<application_name>**-**<environment>**, 
-for example: application-ws-dev.yml
+For more information, please read the [post](http://localhost:3000/post/254)
