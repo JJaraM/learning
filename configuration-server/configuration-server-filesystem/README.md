@@ -1,12 +1,14 @@
 # 
 
 <p align="center">
-    <img src="https://github.com/JJaraM/blog-microservice-ui/blob/master/src/main/resources/public/logo-210x.png" height="210">
+    <a href="https://jonathanjaramorales.herokuapp.com">
+        <img src="https://github.com/JJaraM/blog-microservice-ui/blob/master/src/main/resources/public/logo-210x.png" height="210">
+    </a>
 </p>
 
 <p align="center">
     <h2 align="center">
-        <a href="https://www.w3schools.com">Configuration Server FileSystem</a>
+        <a href="https://jonathanjaramorales.herokuapp.com/post/254">Configuration Server FileSystem</a>
     </h2>
     <p align="center">
         <a href="https://jonathanjaramorales.herokuapp.com/category/184"><img src="https://img.shields.io/badge/-spring-fd6d75.svg"/></a>
@@ -58,13 +60,13 @@ ext {
 }
 
 dependencies {
-    <<1>> implementation 'org.springframework.cloud:spring-cloud-config-server'
+    implementation 'org.springframework.cloud:spring-cloud-config-server'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 dependencyManagement {
     imports {
-        <<2>> mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
     }
 }
 
@@ -74,16 +76,16 @@ test {
 ```
 
 ```comment
-<<1>> The dependency that we are going to need to download the jars.
-<<2>> The place where we are going to find the jars
+The dependency that we are going to need to download the jars.
+The place where we are going to find the jars
 ```
 
 ## Main Class:
  All `java` application starts for the main class,  and all spring boot applications needs to be annotated with `@SpringBootApplication`, and to enable the configuration server needs to be annotated with `@EnableConfigServer`
 
 ```java
-<<1>> @EnableConfigServer
-<<2>> @SpringBootApplication
+@EnableConfigServer
+@SpringBootApplication
 public class ConfigurationServiceApplication {
 
     public static void main(String[] args) {
@@ -101,7 +103,7 @@ server:
 spring:
   application: configuration-server-filesystem
   profiles:
-    <<1>> active: native
+    active: native
   cloud:
     config:
       server:
@@ -112,8 +114,8 @@ spring:
 ```
 
 ```comment
-<<1>> This is the profile that is going to use the application for this type of configuration server you need to use **native** type as required, otherwise you are going to get an error.
-<<2>> In this section you will need to specify the different folders where are located your files, as recommendation is better to keep everything in a single directory so in that way you don't need to add multiple entries there.
+This is the profile that is going to use the application for this type of configuration server you need to use **native** type as required, otherwise you are going to get an error.
+In this section you will need to specify the different folders where are located your files, as recommendation is better to keep everything in a single directory so in that way you don't need to add multiple entries there.
 ```
 
 ```gitclone
