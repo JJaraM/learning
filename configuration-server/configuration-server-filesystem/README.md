@@ -9,17 +9,13 @@
         <a href="https://www.w3schools.com">Configuration Server FileSystem</a>
     </h2>
     <p align="center">
-        <a href="https://jonathanjaramorales.herokuapp.com/category/184"><img src="https://img.shields.io/badge/-spring-fd6d75.svg"></a>
-        <a href="https://jonathanjaramorales.herokuapp.com/category/178"><img src="https://img.shields.io/badge/-spring%5Fboot-fd6d75.svg"></a>
-        <a href="https://jonathanjaramorales.herokuapp.com/category/214"><img src="https://img.shields.io/badge/-spring%5Fcloud.svg"></a>
-        <a href="https://jonathanjaramorales.herokuapp.com/category/215"><img src="https://img.shields.io/badge/-spring%5Fconfiguration%5Fserver-fd6d75.svg"></a>
+        <a href="https://jonathanjaramorales.herokuapp.com/category/184"><img src="https://img.shields.io/badge/-spring-fd6d75.svg"/></a>
+        <a href="https://jonathanjaramorales.herokuapp.com/category/178"><img src="https://img.shields.io/badge/-spring%5Fboot-fd6d75.svg"/></a>
+        <a href="https://jonathanjaramorales.herokuapp.com/category/214"><img src="https://img.shields.io/badge/-spring%5Fcloud-fd6d75.svg"/></a>
+        <a href="https://jonathanjaramorales.herokuapp.com/category/215"><img src="https://img.shields.io/badge/-spring%5Fconfiguration%5Fserver-fd6d75.svg"/></a>
     </p>
 </p>
 
-[![](https://img.shields.io/badge/-spring-fd6d75.svg)](https://jonathanjaramorales.herokuapp.com/category/184)
-[![](https://img.shields.io/badge/-spring%5Fboot-fd6d75.svg)](https://jonathanjaramorales.herokuapp.com/category/178)
-[![](https://img.shields.io/badge/-spring%5Fcloud-fd6d75.svg)](https://jonathanjaramorales.herokuapp.com/category/214)
-[![](https://img.shields.io/badge/-spring%5Fcloud-fd6d75.svg)](https://jonathanjaramorales.herokuapp.com/category/215)
 
 This guide will show you how to centralized your configuration and consume it througth a `spring cloud configuration server`, but this implementation is focus on save all files in the server, instead of git as repository, you may want to do this if you want to prevent that any user update the git repository and this could cause issues in the different environments... well this depends of how your company implements the deployments.
 
