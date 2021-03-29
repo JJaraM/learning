@@ -132,7 +132,7 @@ Inside of the project repository there is a file  called ``application-ws-dev.ym
 If you want to create a new file you can store a new file in this folder (i.e server-files), and needs to follow the next pattern:  application-${name}-#{environment}, and replace the variables:
 
 ```comment
-{name} = Corresponds with the name of the application, if an external application is going to use this file, this name needs to be consistent with the value that is in the property **spring.application**
+${name} = Corresponds with the name of the application, if an external application is going to use this file, this name needs to be consistent with the value that is in the property **spring.application**
 
 ${environment} = Corresponds with the environment that is going to request the data, this is important if you are going to keep in the same server and folder multiple properties for multiple environments.
 ```
